@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brian K. Vagnini - Technical Landing page </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/vagnini.css" rel="stylesheet" type="text/css">
+     <!-- HTML5 shim for IE backwards compatibility -->
+	        <!--[if lt IE 9]>
+			        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+			        </script>
+		        <!--[endif]-->
+
+</head>
+<body>
+    <h1> What does Brian know about ___?</h1>
+    <nav> 
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScript</li>
+<li>JQuery</li>
+<li>React</li>
+<li>PHP</li>
+<li>Python</li>
+<li>Django</li>
+<li>Flask</li>
+<li>SQL</li>
+<li>NoSQL</li>
+</ul>
+    </nav>
+    <div class = "chart">
+    <canvas id="myChart" width="10%" height="10%"></canvas> <!-- This is WAY too damn big right now -->
+    <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['HTML5', 'CSS3', 'JavaScript', 'JQuery', 'React', 'PHP', 'Python', 'Django', 'Flask', 'SQL', 'NoSQL'],
+            datasets: [{
+                label: 'Competency Scale',
+                data: [6, 4, 3, .5, .5, 3, 3, .5, .5, 3, 1],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+</div> 
+
+<div class = "changing_content">
+<!--  insert React component here that changes content based on which button / link they clicked on from "What does Brian know about___ " section-->
+<!-- Include 2 sections: Projects (which would also include website links if available), and classes taken on that topic-->
+<h2>This will be a React Component</h2>
+<h3> Projects</h3>
+<h3>Classes taken/Books Read</h3>
+</div>
+
+
+<div class = "showcase">
+<h2> Website Showcase</h2>
+<ul>
+    <li><a href = "http://www.briankvagnini.com/">briankvagnini.com</a> - My Creative Landing Page - random story excerpt on page load</li>
+    <li><a href = "http://www.agentsofmad.com/">agentsofmad.com</a> - Band project web site - uses Responsive Design</li>
+    <li><a href = "http://www.texardrive.com/">texardrive.com</a> - Band project web site - uses Markdown and Github Pages for hosting</li>
+    <li><a href = "http://www.pythontlh.com/">pythontlh.com</a> - Local Python Meetup group support site - Flask App (coming soon)</li>
+</ul>
+</div>
+
+<footer>
+    <h4>Contact Info</h4>
+<li><a href ="mailto:brian@vagnini.net">brian@vagnini.net</a></li>
+<li> 850-583-0842</li>
+
+<h4>Profiles</h4>
+<a href = "http://www.linkedin.com/in/briankvagnini/"><img src = "images/LinkedIn_logo.png" alt = "LinkedIn logo" /></a> 
+<a href = "https://github.com/bkvagnini"><img src = "images/Github_logo.png" alt = "Github logo" /></a>  
+<a href = "http://stackoverflow.com/users/3546767/bkvagnini"><img src = "images/StackOverflow_3546767.png" alt = "Stack Overflow logo" /></a></li>
+</footer>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/bootstrap.min.js"></script>	
+</body>
+
+</html>
