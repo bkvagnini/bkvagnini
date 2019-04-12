@@ -22,7 +22,7 @@
 </head>
 <body>
     <h1> What does Brian know about ___?</h1>
-    <nav> 
+    <nav>
         <button>HTML5</button>
         <button>CSS3</button>
         <button>JavaScript</button>
@@ -35,9 +35,10 @@
         <button>SQL</button>
         <button>NoSQL</button>
     </nav>
+    <p><small><em>Click the button to see...</em></small></p>
 
     <div class = "chart">
-    <canvas id="myChart" width="10%" height="10%"></canvas> 
+    <canvas id="myChart" width="10%" height="10%"></canvas>
     <script>
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
@@ -86,13 +87,13 @@
         }
     });
     </script>
-</div> 
+</div>
 
 <div id = "root" class = "changing_content"></div>
 <!--  insert React component here that changes content based on which button / link they clicked on from "What does Brian know about___ " section-->
 <!-- Include 2 sections: Projects (which would also include website links if available), and classes taken on that topic-->
 
-<!-- 
+<!--
 <div>
 <h2>This will be a React Component</h2>
 <h3> Projects</h3>
@@ -116,12 +117,14 @@
 <li> 850-583-0842</li>
 
 <h4>Profiles</h4>
-<a href = "http://www.linkedin.com/in/briankvagnini/"><img src = "images/LinkedIn_logo.png" alt = "LinkedIn logo" /></a> 
-<a href = "https://github.com/bkvagnini"><img src = "images/Github_logo.png" alt = "Github logo" /></a>  
+<a href = "http://www.linkedin.com/in/briankvagnini/"><img src = "images/LinkedIn_logo.png" alt = "LinkedIn logo" /></a>
+<a href = "https://github.com/bkvagnini"><img src = "images/Github_logo.png" alt = "Github logo" /></a>
 <a href = "http://stackoverflow.com/users/3546767/bkvagnini"><img src = "images/StackOverflow_3546767.png" alt = "Stack Overflow logo" /></a></li>
+<h4> Resume</h4>
+<a href = "files/BrianKVagnini_CodeResume_041119.pdf">Code Resume</a>
 </footer>
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="js/bootstrap.min.js"></script>	
+<script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
