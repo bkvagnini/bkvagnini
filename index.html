@@ -4,7 +4,12 @@
     <title>Brian K. Vagnini - Technical Landing page </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <script crossorigin src="https://unpkg.com/react@16.4.1/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.4.1/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script src="js/app.js"></script>
+
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
     <link href="css/vagnini.css" rel="stylesheet" type="text/css">
@@ -18,22 +23,21 @@
 <body>
     <h1> What does Brian know about ___?</h1>
     <nav> 
-<ul>
-<li>HTML5</li>
-<li>CSS3</li>
-<li>JavaScript</li>
-<li>JQuery</li>
-<li>React</li>
-<li>PHP</li>
-<li>Python</li>
-<li>Django</li>
-<li>Flask</li>
-<li>SQL</li>
-<li>NoSQL</li>
-</ul>
+        <button>HTML5</button>
+        <button>CSS3</button>
+        <button>JavaScript</button>
+        <button>JQuery</button>
+        <button>React</button>
+        <button>PHP</button>
+        <button>Python</button>
+        <button>Django</button>
+        <button>Flask</button>
+        <button>SQL</button>
+        <button>NoSQL</button>
     </nav>
+
     <div class = "chart">
-    <canvas id="myChart" width="10%" height="10%"></canvas> <!-- This is WAY too damn big right now -->
+    <canvas id="myChart" width="10%" height="10%"></canvas> 
     <script>
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
@@ -84,14 +88,17 @@
     </script>
 </div> 
 
-<div class = "changing_content">
+<div id = "root" class = "changing_content"></div>
 <!--  insert React component here that changes content based on which button / link they clicked on from "What does Brian know about___ " section-->
 <!-- Include 2 sections: Projects (which would also include website links if available), and classes taken on that topic-->
+
+<!-- 
+<div>
 <h2>This will be a React Component</h2>
 <h3> Projects</h3>
 <h3>Classes taken/Books Read</h3>
 </div>
-
+-->
 
 <div class = "showcase">
 <h2> Website Showcase</h2>
